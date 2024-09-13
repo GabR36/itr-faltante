@@ -3,8 +3,11 @@ Este programa nao possui garantia nenhuma, use por sua conta e risco.
 # Descrição
 Script para python que permite saber a relação nirf-nome de imoveis
 declarados em um ano mas nao em outro. ainda outros dados uteis como
-quantidade de declarações feitas nos anos comparados e total de
-declarações feitas só num ano mas nao no outro.
+quantidade de declarações feitas nos anos comparados, total de
+declarações feitas só num ano mas nao no outro, porcentagem de
+declarações feitas que tem Incra/CCIR e Porcentagem de declarações
+isentas de imposto.
+
 Esse programa foi testado com python 3.8.6 no windows 7.
 # Exemplo
 Declarações feitas em 2022 mas nao em 2023. resultando em
@@ -18,4 +21,7 @@ python itr-util --ano1 2022 --ano2 2023 --saida saida.txt
 # Parâmetros
 --ano1, --ano2 e --saida, para, respectivamente, o ano a ser usado como guia, o ano a ser comparado com o ano guia e ser vefificado quanto a declarações nao feitas e o caminho do arquivo de saida (use \\ para windows).
 # Uso
-Apos clonar, use python itr-util no diretorio.
+Apos clonar, use execute o script com o python com "python .\itr-util",
+em um cmd, powershell, no diretorio. O padrão é o resultado ficar no
+arquivo saida.txt no mesmo diretorio em que o script foi executado e
+os anos considerados devem ser o ano atual e o ano anterior.
